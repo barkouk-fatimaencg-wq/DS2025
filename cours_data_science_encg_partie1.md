@@ -1,8 +1,7 @@
 # COURS DE SCIENCE DES DONNÉES
 ## École Nationale de Commerce et de Gestion (ENCG) - 4ème Année
 #BARKOUK Fatima
-<img src="![F135166562](https://github.com/user-attachments/assets/e2ea6e96-b07d-4858-86f2-93a2d6491766)
-" style="height:464px;margin-right:432px"/>
+<img src="F135166562.jpg" style="height:464px;margin-right:432px"/>
 ---
 
 # PARTIE 1 : FONDAMENTAUX DE LA SCIENCE DES DONNÉES
