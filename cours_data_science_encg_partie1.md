@@ -1,5 +1,6 @@
 # COURS DE SCIENCE DES DONNÉES
 ## École Nationale de Commerce et de Gestion (ENCG) - 4ème Année
+<img src="encc.jpg" style="height:464px;margin-right:432px"/>
 #BARKOUK Fatima
 <img src="F135166562.jpg" style="height:464px;margin-right:432px"/>
 ---
