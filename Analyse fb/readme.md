@@ -1,9 +1,20 @@
+# COURS DE SCIENCE DES DONNÉES
 
-introduction :
+# A.LARHLIMI
+
+## BARKOUK Fatima 
+## 22007237
+<img src="WhatsApp Image 2024-06-13 à 23.18.56_3756b266.jpg" style="height:540px;margin-right:393px"/>
+
+## École Nationale de Commerce et de Gestion (ENCG) - 4ème Année
+
+## Analyse des données relatives aux notes des étudiants aux examens
+---
+## À propos du jeu de données :
 Le dataset "Student Exam Score Dataset Analysis" disponible sur Kaggle provient d'une école publique fictive selon les sources disponibles. Il contient des données démographiques, comportementales, et académiques des étudiants incluant leur genre, groupe ethnique, niveau d’éducation des parents, statut marital des parents, habitudes de préparation aux examens, temps d’étude hebdomadaire, activité sportive, structure familiale, moyen de transport pour l’école, et les scores aux mathématiques, lecture et écriture. Les données ont été collectées pour analyser les facteurs influençant la performance académique des étudiants et fournir des insights exploitables pour les éducateurs et décideurs.
 
 Ainsi, bien que le dataset soit utilisé dans un contexte éducatif général, sa provenance exacte géographique n’est pas précisée précisément (il s'agit d'une école "fictional public school"), indiquant qu’il s’agit d’un jeu de données synthétique ou anonymisé pour des fins d’analyse pédagogique. Les variables démographiques incluent plusieurs groupes ethniques (groupes A à E), suggérant une population diverse mais non localisée géographiquement précise.
-Les objectifs principaux sont :
+## Les objectifs principaux sont :
 Le dataset "Student Exam Score Dataset Analysis" disponible sur Kaggle a pour objectifs principaux d'analyser et comprendre les performances des étudiants à leurs examens en relation avec leurs habitudes d'étude et leurs caractéristiques personnelles. Voici les informations et buts utiles à connaître sur ce dataset :
 
 Il présente toutes les informations relatives à la performance des étudiants aux examens, mettant en relation les scores obtenus avec des facteurs comme le temps d'étude, les heures de sommeil, le taux d'assiduité, les scores précédents, et d'autres paramètres personnels. Cela facilite une analyse approfondie des déterminants du succès scolaire.
@@ -17,7 +28,7 @@ On peut aussi utiliser ce jeu de données pour tester différents algorithmes de
 À propos du jeu de données
 Cet ensemble de données présente toutes les informations relatives aux performances des étudiants aux examens. Les notes obtenues sont ainsi mises en relation avec les habitudes d'étude et le parcours de l'étudiant, facilitant l'analyse de ses résultats. Cet ensemble de données est utilisé dans les établissements d'enseignement supérieur (collèges, lycées, universités, etc.) pour déterminer si un étudiant a réussi ou échoué à un examen. Les colonnes de cet ensemble de données sont : identifiant de l'étudiant, heures d'étude, heures de sommeil, taux de présence, note précédente et note finale.
 
-INTERPRÉTATION DE CHAQUE CODE DU NOTEBOOK
+## INTERPRÉTATION DE CHAQUE CODE DU NOTEBOOK
 1️⃣ !pip install ucimlrepo
 ➡️ Interprétation : Cette ligne installe une bibliothèque appelée ucimlrepo, qui permet d’accéder facilement aux jeux de données de l’UCI Machine Learning Repository. Sans cette installation, le dataset Wine Quality ne pourrait pas être téléchargé automatiquement.
 
@@ -102,6 +113,6 @@ Xv_n = sc.transform(Xv)
 1️⃣3️⃣ Heatmap finale stylisée
 ➡️ Interprétation : Un deuxième heatmap plus esthétique est affiché pour mieux interpréter les corrélations entre caractéristiques.
 
-Conclusion
+## Conclusion
 L’étude réalisée dans ce fichier permet d’aboutir à une vision complète et cohérente du processus d’analyse et de modélisation appliqué au jeu de données. À travers les différentes étapes du code, tu as suivi une démarche structurée : chargement des données, exploration statistique, visualisation graphique, traitement des valeurs manquantes, normalisation ou transformation des variables, puis entraînement et évaluation de plusieurs modèles de machine learning. Les visualisations produites ont permis de mieux comprendre la distribution des variables ainsi que leurs relations, facilitant l’interprétation et la préparation du jeu de données. Les opérations de prétraitement ont contribué à améliorer la qualité des données et la performance des modèles. Les algorithmes testés ont montré leur capacité à identifier les tendances essentielles du jeu de données, permettant d’obtenir des prédictions cohérentes et exploitables. Les résultats obtenus démontrent que les choix de préparation et de modélisation sont pertinents, tout en laissant apparaître des marges d’amélioration possibles, notamment via l’ajustement des hyperparamètres ou l’utilisation de modèles plus sophistiqués. De manière générale, ce travail met en évidence l’importance de chaque étape du pipeline d’analyse, depuis la compréhension des données jusqu’à l’évaluation des modèles. Il constitue une base solide pour approfondir l’étude, comparer d’autres approches ou appliquer la même méthodologie à d’autres jeux de données.[1]
 
