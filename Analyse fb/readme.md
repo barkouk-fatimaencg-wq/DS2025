@@ -4,7 +4,7 @@
 
 ## BARKOUK Fatima 
 ## 22007237
-<img src="Analyse fb/m.jpg" style="height:540px;margin-right:393px"/>
+<img src="m.jpg" style="height:540px;margin-right:393px"/>
 
 ## École Nationale de Commerce et de Gestion (ENCG) - 4ème Année
 
