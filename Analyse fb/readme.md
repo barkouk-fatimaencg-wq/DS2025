@@ -1,9 +1,13 @@
 <img src="Analyse fb/F135166562.jpg"/>
-INTRODUCTION :
+COURS DE SCIENCE DES DONNÉES
+A.LARHLIMI
+BARKOUK Fatima
+22007237
+introduction :
 Le dataset "Student Exam Score Dataset Analysis" disponible sur Kaggle provient d'une école publique fictive selon les sources disponibles. Il contient des données démographiques, comportementales, et académiques des étudiants incluant leur genre, groupe ethnique, niveau d’éducation des parents, statut marital des parents, habitudes de préparation aux examens, temps d’étude hebdomadaire, activité sportive, structure familiale, moyen de transport pour l’école, et les scores aux mathématiques, lecture et écriture. Les données ont été collectées pour analyser les facteurs influençant la performance académique des étudiants et fournir des insights exploitables pour les éducateurs et décideurs.
 
 Ainsi, bien que le dataset soit utilisé dans un contexte éducatif général, sa provenance exacte géographique n’est pas précisée précisément (il s'agit d'une école "fictional public school"), indiquant qu’il s’agit d’un jeu de données synthétique ou anonymisé pour des fins d’analyse pédagogique. Les variables démographiques incluent plusieurs groupes ethniques (groupes A à E), suggérant une population diverse mais non localisée géographiquement précise.
-Les objectifs : 
+Les objectifs principaux sont :
 Le dataset "Student Exam Score Dataset Analysis" disponible sur Kaggle a pour objectifs principaux d'analyser et comprendre les performances des étudiants à leurs examens en relation avec leurs habitudes d'étude et leurs caractéristiques personnelles. Voici les informations et buts utiles à connaître sur ce dataset :
 
 Il présente toutes les informations relatives à la performance des étudiants aux examens, mettant en relation les scores obtenus avec des facteurs comme le temps d'étude, les heures de sommeil, le taux d'assiduité, les scores précédents, et d'autres paramètres personnels. Cela facilite une analyse approfondie des déterminants du succès scolaire.
