@@ -35,15 +35,6 @@ D’après la description du dataset, les colonnes sont les suivantes
 Baselight
  :
 
-Colonne	Type / Signification
-student_id	Identifiant unique de l’étudiant (chaîne de caractères).
-hours_studied	Nombre d’heures d’études (double / numérique). Indique combien d’heures l’étudiant a étudié — cela peut représenter une mesure d’effort.
-sleep_hours	Nombre d’heures de sommeil (double / numérique). Cela peut mesurer le temps de repos / bien-être, potentiellement corrélé à la performance.
-attendance_percent	Pourcentage de présence (double / numérique). Indique le taux de présence de l’étudiant (assiduité) — un facteur potentiellement influent pour la réussite.
-previous_scores	Score(s) précédent(s) de l’étudiant — typiquement un entier (BIGINT). Cela peut représenter des notes antérieures, un indicateur d’historique académique.
-exam_score	Score final de l’examen (double / numérique) — c’est la variable cible, l’“output” qu’on cherche à expliquer ou prédire.
----
-
 # ⭐ **INTERPRÉTATION DE CHAQUE CODE DU NOTEBOOK**
 1️⃣ student_id
 
@@ -181,8 +172,6 @@ Pas de forte asymétrie → pas de biais important dans les scores.
 On voit très peu de notes < 20 ou > 50.
 
 Cela signifie que le dataset est propre et ne contient pas d’outliers problématiques.
-
-<img src="téléchargement (1).png" style="height:540px;margin-right:393px"/>
 8️⃣Interprétation complète de la matrice
 plt.figure(figsize=(12, 10))
 corr = data.corr()
@@ -199,7 +188,7 @@ sns.heatmap(
 plt.title("Correlation Matrix of Student Exam Scores Data")
 plt.show()
 Voici ce que signifie chaque corrélation importante :
-<img src="téléchargement (1).png" style="height:540px;margin-right:393px"/>
+<img src="téléchargement (2).png" style="height:540px;margin-right:393px"/>
 🔥 1. La corrélation la plus forte : hours_studied → exam_score (0.78)
 
 Valeur : +0.78, très forte corrélation positive.
