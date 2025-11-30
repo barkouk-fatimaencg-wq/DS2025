@@ -135,7 +135,7 @@ plt.figure()
 corr = X.corr()
 sns.heatmap(corr)
 ```
-
+<img src="44.png" style="height:540px;margin-right:393px"/>
 ➡️ **Interprétation :**
 Ce code calcule la **matrice de corrélation** entre toutes les colonnes.
 Le heatmap permet de visualiser :
