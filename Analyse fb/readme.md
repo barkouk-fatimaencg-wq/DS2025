@@ -172,6 +172,7 @@ plt.title("Correlation Matrix of Student Exam Scores Data")
 plt.show()
 Voici ce que signifie chaque corrélation importante :
 <img src="téléchargement (2).png" style="height:540px;margin-right:393px"/>
+
 🔥 1. La corrélation la plus forte : hours_studied → exam_score (0.78)
 
 Valeur : +0.78, très forte corrélation positive.
