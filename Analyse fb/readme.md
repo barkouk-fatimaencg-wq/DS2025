@@ -11,29 +11,12 @@
 ## Analyse des données relatives aux notes des étudiants aux examens
 ---
 ## À propos du jeu de données :
-Le dataset "Student Exam Score Dataset Analysis" disponible sur Kaggle provient d'une école publique fictive selon les sources disponibles. Il contient des données démographiques, comportementales, et académiques des étudiants incluant leur genre, groupe ethnique, niveau d’éducation des parents, statut marital des parents, habitudes de préparation aux examens, temps d’étude hebdomadaire, activité sportive, structure familiale, moyen de transport pour l’école, et les scores aux mathématiques, lecture et écriture. Les données ont été collectées pour analyser les facteurs influençant la performance académique des étudiants et fournir des insights exploitables pour les éducateurs et décideurs.
+🎯 Contexte & objectif du dataset
 
-Ainsi, bien que le dataset soit utilisé dans un contexte éducatif général, sa provenance exacte géographique n’est pas précisée précisément (il s'agit d'une école "fictional public school"), indiquant qu’il s’agit d’un jeu de données synthétique ou anonymisé pour des fins d’analyse pédagogique. Les variables démographiques incluent plusieurs groupes ethniques (groupes A à E), suggérant une population diverse mais non localisée géographiquement précise.
-## Les objectifs principaux sont :
-Le dataset "Student Exam Score Dataset Analysis" disponible sur Kaggle a pour objectifs principaux d'analyser et comprendre les performances des étudiants à leurs examens en relation avec leurs habitudes d'étude et leurs caractéristiques personnelles. Voici les informations et buts utiles à connaître sur ce dataset :
-
-Il présente toutes les informations relatives à la performance des étudiants aux examens, mettant en relation les scores obtenus avec des facteurs comme le temps d'étude, les heures de sommeil, le taux d'assiduité, les scores précédents, et d'autres paramètres personnels. Cela facilite une analyse approfondie des déterminants du succès scolaire.
-L'objectif est d'explorer les données pour identifier des tendances globales et des facteurs influents sur la réussite aux examens, par exemple comment les habitudes d'étude ou la présence en classe impactent les scores.
-
-Ce dataset est souvent utilisé pour des analyses exploratoires, la visualisation des résultats, ainsi que pour la construction de modèles prédictifs de la performance scolaire (régression, classification).
-
-Dans le contexte éducatif, ces analyses aident à détecter les étudiants à risque, guider des interventions ciblées, améliorer les stratégies d'enseignement, et optimiser les ressources pédagogiques.
-
-On peut aussi utiliser ce jeu de données pour tester différents algorithmes de machine learning afin de prédire les résultats des examens en fonction des données fournies, ce qui constitue une application concrète de l'analyse basée sur ce dataset.
-À propos du jeu de données
-Cet ensemble de données présente toutes les informations relatives aux performances des étudiants aux examens. Les notes obtenues sont ainsi mises en relation avec les habitudes d'étude et le parcours de l'étudiant, facilitant l'analyse de ses résultats. Cet ensemble de données est utilisé dans les établissements d'enseignement supérieur (collèges, lycées, universités, etc.) pour déterminer si un étudiant a réussi ou échoué à un examen. Les colonnes de cet ensemble de données sont : identifiant de l'étudiant, heures d'étude, heures de sommeil, taux de présence, note précédente et note finale.
-Contexte & objectif du dataset. 
-
-Structure du dataset : colonnes & interprétations
-
-D’après la description du dataset, les colonnes sont les suivantes 
-Baselight
- :
+* Ce dataset contient les résultats d’examen de plusieurs étudiants, ainsi que quelques variables explicatives (facteurs) liés à leurs habitudes ou caractéristiques académiques. ([Baselight][1])
+* L’objectif principal est d’analyser l’influence de ces facteurs (temps d’étude, sommeil, présence, résultats antérieurs, etc.) sur la performance à l’examen final (score d’examen). Cela peut servir à des analyses statistiques, à de l’exploration de données (EDA), voire à de la modélisation prédictive (prévoir le score d’un étudiant donné en fonction de ses caractéristiques).
+* Autrement dit : ce dataset est un bon outil pédagogique ou d’expérimentation pour comprendre — en science des données / statistiques / pédagogie — comment certains comportements ou antécédents sont corrélés (ou pas) avec la réussite académique.
+Ce type d’analyse s’inscrit dans le champ plus large de l’“educational data mining” (extraction de connaissances à partir de données éducatives), souvent utilisé pour identifier des déterminants de la réussite, recommander des interventions (ex : soutien pour ceux qui risquent d’échouer), etc. ([arXiv][2])
 
 # ⭐ **INTERPRÉTATION DE CHAQUE CODE DU NOTEBOOK**
 1️⃣ student_id
@@ -283,7 +266,7 @@ attendance_percent
 previous_scores
 
 exam_score
-<img src="téléchargement (1).png" style="height:540px;margin-right:393px"/>
+<img src="téléchargement (3).png" style="height:540px;margin-right:393px"/>
 et on voit plusieurs choses importantes :
 
 🔵 1. hours_studied → exam_score (corrélation positive forte)
