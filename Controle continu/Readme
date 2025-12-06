@@ -7,3 +7,331 @@
 <img src="m.jpg" style="height:540px;margin-right:393px"/>
 
 ## École Nationale de Commerce et de Gestion (ENCG) - 4ème Année
+---
+
+# ✅ **1. Contexte du travail**
+
+Ce travail s’inscrit dans le cadre d’une analyse des comportements et préférences d’investissement d’un échantillon de 40 individus. Les données proviennent d’un questionnaire portant sur plusieurs aspects : âge, genre, objectifs financiers, instruments d’investissement préférés, perception du risque, horizon de placement et sources d’information utilisées.
+Les fichiers AA.csv et BB.csv fournis dans le dataset Kaggle contiennent les réponses brutes et nettoyées du questionnaire. Ils ont été analysés à l’aide d’un notebook Jupyter utilisant Python (Pandas, NumPy, Matplotlib, Seaborn).
+Ce contexte permet de comprendre comment les investisseurs perçoivent différentes options financières (Mutual Funds, Equity Market, PPF, Gold, etc.) et quels facteurs influencent leurs décisions. L’analyse inclut également des modèles prédictifs (Machine Learning) afin d’explorer la possibilité d’anticiper certaines préférences ou comportements en fonction des caractéristiques personnelles des répondants.
+
+---
+
+# ✅ **2. But (Objectif) du projet**
+
+Le but principal de ce travail est de transformer un notebook Jupyter en une analyse claire et structurée, tout en fournissant une compréhension approfondie du dataset financier. Plus précisément, les objectifs sont les suivants :
+
+### 🎯 **Objectif général**
+
+Analyser et interpréter les préférences d’investissement d’un groupe de répondants afin de dégager des tendances, des profils types et des relations entre les variables.
+
+### 🎯 **Objectifs spécifiques**
+
+1. **Décrire le dataset** : structure, types des variables, statistiques descriptives, valeurs manquantes, cohérence.
+2. **Analyser les préférences d’investissement** :
+   – Identifier les instruments financiers les plus et les moins appréciés.
+   – Étudier les préférences en fonction de l’âge, du genre, de la durée d’investissement, etc.
+3. **Explorer les relations entre variables** :
+   – Corrélations entre choix d’investissement.
+   – Impact du genre, âge ou source d’information.
+4. **Visualiser les données** à l’aide d’histogrammes, diagrammes, heatmaps et graphiques explicatifs.
+5. **Construire des modèles de prédiction** (classification) pour :
+   – L’investissement en bourse (Stock_Market = Yes/No).
+   – La durée d’investissement (Duration).
+6. **Évaluer les performances des modèles** et identifier ceux qui donnent les meilleurs résultats.
+7. **Fournir une interprétation claire** de chaque étape du code contenu dans le notebook.
+Voici **l’interprétation complète, simple et claire de *chaque cellule de code*** contenue dans ton rapport — basées sur les extraits du notebook fournis dans ton PDF .
+✔️ *C’est résumé, clair, et prêt à intégrer dans ton rapport.*
+
+---
+
+# ✅ **Interprétation de chaque code (cellule par cellule)**
+
+*(Version pédagogique + les résultats importants)*
+
+---
+
+## 🔵 **Cellule [1] — Téléchargement du dataset Kaggle**
+
+**Code :** télécharge les données depuis Kaggle.
+**Interprétation :**
+Le dataset “finance-data” est importé automatiquement dans l’environnement de travail (Google Colab). Les fichiers sont extraits dans un dossier local.
+➡️ *Objectif : rendre les données accessibles pour l’analyse.*
+
+---
+
+## 🔵 **Cellule [2] — Importation des bibliothèques**
+
+**Code :** import numpy, pandas, matplotlib, seaborn, warnings, etc.
+**Interprétation :**
+Ces bibliothèques permettent :
+
+* pandas → manipuler les données
+* numpy → calculs numériques
+* seaborn/matplotlib → visualisations
+* glob/os → gérer les fichiers
+  ➡️ *Préparation de l’environnement de travail.*
+
+---
+
+## 🔵 **Cellule [5] — Liste des fichiers**
+
+**Interprétation :**
+Affiche les fichiers disponibles :
+
+* **AA.csv**
+* **BB.csv**
+  ➡️ Confirme que les données sont bien présentes.
+
+---
+
+## 🔵 **Cellule [7] — Chargement des fichiers CSV**
+
+**Code :**
+
+* Original_data = lecture de AA.csv
+* Finance_data = lecture de BB.csv
+
+**Interprétation :**
+Le fichier AA contient les réponses brutes du questionnaire.
+Le fichier BB contient les mêmes données mais **nettoyées et avec des noms de colonnes raccourcis**.
+➡️ *Finance_data est la version propre utilisée dans toute l’analyse.*
+
+---
+
+## 🔵 **Cellule [8] — Affichage des premières lignes**
+
+**Interprétation :**
+Montre la structure des données brutes : colonnes très longues et détaillées (ex : questions du sondage).
+➡️ Permet de comprendre la nature des réponses des participants.
+
+---
+
+## 🔵 **Cellules [9] — Afficher head et tail de Finance_data**
+
+**Interprétation :**
+Les colonnes y sont raccourcies :
+
+* Mutual_Funds
+* Equity_Market
+* Debentures
+* age
+* gender
+  ➡️ DataFrame prêt pour analyse.
+
+---
+
+## 🔵 **Cellules [10–11] — Vérification des valeurs manquantes**
+
+**Interprétation :**
+Aucune valeur manquante dans les deux DataFrames.
+➡️ Pas besoin d’imputation.
+
+---
+
+## 🔵 **Cellule [12] — info()**
+
+**Interprétation :**
+
+* 40 lignes
+* 24 colonnes
+* 8 colonnes numériques (int64)
+* 16 colonnes catégorielles (object)
+  ➡️ Structure très propre et homogène.
+
+---
+
+## 🔵 **Cellules [13–14] — Doublons et shape**
+
+**Interprétation :**
+Aucun doublon.
+Taille = (40,24).
+➡️ Dataset petit mais cohérent.
+
+---
+
+## 🔵 **Cellule [15] — Valeurs uniques**
+
+**Interprétation :**
+Chaque colonne a entre 2 et 7 valeurs uniques → normal pour un questionnaire.
+➡️ Important pour comprendre la variabilité.
+
+---
+
+## 🔵 **Cellule [16] — Types de données**
+
+**Interprétation :**
+Confirme la séparation entre colonnes numériques et colonnes catégorielles.
+
+---
+
+## 🔵 **Cellules [17–18] — Séparation num/obj**
+
+**Interprétation :**
+Classification utile pour visualisations et corrélations.
+
+---
+
+## 🔵 **Cellule [19] — Utilisation mémoire**
+
+**Interprétation :**
+≈ 40 KB → dataset très léger.
+➡️ Difficile pour le machine learning (peu d’observations).
+
+---
+
+## 🔵 **Cellule [20] — Statistiques descriptives**
+
+**Interprétation :**
+
+### 📌 Résultats importants :
+
+* Âge moyen = **27,8 ans**
+* Options les plus préférées (moyenne basse) :
+  ✔ Mutual Funds (2,55)
+  ✔ PPF (2,03)
+* Options les moins appréciées :
+  ❌ Gold (5,98)
+  ❌ Debentures (5,75)
+
+---
+
+## 🔵 **Cellules [21–22] — Liste des colonnes**
+
+**Interprétation :**
+Affiche les colonnes numériques et catégorielles → utile pour l’EDA.
+
+---
+
+# 🟩 **5.2 Analyse Exploratoire des Données (EDA)**
+
+## 🔵 **Cellule [23] — Histogrammes**
+
+**Interprétation :**
+
+* Mutual Funds et PPF = les plus populaires
+* Gold et Debentures = les moins populaires
+  ➡️ Les préférences sont claires.
+
+---
+
+## 🔵 **Cellule [24] — Répartition par genre**
+
+**Interprétation :**
+Nombre presque identique d’hommes et de femmes.
+
+---
+
+## 🔵 **Cellule [25] — Répartition âge/genre**
+
+**Interprétation :**
+La majorité des répondants ont 23–35 ans.
+
+---
+
+## 🔵 **Cellule [26] — Durée d’investissement**
+
+**Interprétation :**
+Majorité préfèrent :
+
+* 1–3 ans
+* 3–5 ans
+  ➡️ Ils ont une vision plutôt moyen terme.
+
+---
+
+## 🔵 **Cellule [27] — Facteurs influencent l’investissement**
+
+**Interprétation :**
+
+1. **Risque (Risk)**
+2. **Rendement (Returns)**
+3. **Sécurité (Safety)** = le moins cité
+   ➡️ Les gens cherchent d’abord les gains potentiels.
+
+---
+
+## 🔵 **Cellule [28] — Hommes investisseurs par âge**
+
+**Interprétation :**
+Pics à 24, 27 et 30 ans.
+
+---
+
+## 🔵 **Cellule [29] — Femmes investisseuses par âge**
+
+**Interprétation :**
+Distribution similaire aux hommes.
+
+---
+
+## 🔵 **Cellule [30] — Sources d’information**
+
+**Interprétation :**
+
+1. Consultants financiers : **35%**
+2. Internet : **32%**
+   ➡️ Les médias traditionnels sont minoritaires.
+
+---
+
+## 🔵 **Cellules [31–32] — Corrélations et Heatmap**
+
+**Interprétation :**
+
+* Âge corrélé légèrement avec Equity et Debentures
+* Forte corrélation négative entre :
+  ✔ Debentures & PPF (-0,51)
+  ✔ Government Bonds & Fixed Deposits (-0,53)
+  ➡️ Certaines préférences s’opposent fortement.
+
+---
+
+## 🔵 **Cellules [33–34] — Focus sur "Financial Consultants"**
+
+**Interprétation :**
+Chez ceux qui consultent un conseiller financier :
+
+* PPF = le plus aimé
+* Debentures & Gold = les moins aimés
+  ➡️ Les conseillers tirent les gens vers des placements plus sécurisés.
+
+---
+
+# 🟦 **5.3 Modélisation Machine Learning**
+
+## 🔵 **Prédiction : Stock_Market (Yes/No)**
+
+**Interprétation :**
+Les modèles donnent 0,75 accuracy mais :
+❌ la classe “No” n’est jamais prédite
+➡️ Le modèle est **inutile**.
+
+---
+
+## 🔵 **Prédiction : Duration (4 classes)**
+
+**Interprétation :**
+✔ Random Forest = meilleur modèle
+
+* Accuracy test = **0,875**
+* Bonne stabilité avec validation croisée
+Voici **une conclusion claire, structurée et prête à insérer dans ton rapport** :
+
+---
+
+# ✅ **Conclusion**
+
+Cette analyse a permis d’examiner en profondeur les préférences et comportements d’investissement d’un échantillon de 40 répondants à travers un dataset structuré et nettoyé. Les résultats montrent que les investisseurs privilégient principalement les **Mutual Funds** et le **PPF**, considérés comme plus accessibles et moins risqués, tandis que des options comme **l’or** et les **débentures** sont nettement moins appréciées.
+L’étude met également en évidence l’influence de certaines caractéristiques individuelles : la majorité des répondants sont âgés de 23 à 35 ans, et leurs décisions d’investissement sont fortement guidées par la recherche de rendement et la perception du risque. Les sources d’information les plus utilisées, notamment les **consultants financiers** et **internet**, jouent un rôle important dans l’orientation de leurs choix.
+
+La phase de modélisation a montré que, malgré la petite taille du dataset, le modèle **Random Forest** s’est révélé le plus performant pour prédire la durée d’investissement (Duration), avec une précision de 87,5 %. En revanche, les modèles construits pour la variable Stock_Market se sont avérés peu fiables en raison du déséquilibre des classes, illustrant les limites d’un échantillon réduit.
+
+Dans l’ensemble, ce travail démontre l’importance d’une analyse exploratoire rigoureuse pour comprendre les tendances d’investissement et l’utilité de modèles prédictifs pour anticiper certains comportements. Il souligne également les limites liées à la taille du dataset, tout en ouvrant des pistes pour des analyses futures sur des échantillons plus larges et plus représentatifs.
+
+
+
+
+
+
+
