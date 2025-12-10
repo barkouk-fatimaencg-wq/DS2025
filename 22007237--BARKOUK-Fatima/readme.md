@@ -5,6 +5,11 @@
 ## BARKOUK Fatima 
 ## 22007237
 <img src="F135166562.jpg" style="height:540px;margin-right:393px"/>
+## École Nationale de Commerce et de Gestion (ENCG) - 4ème Année
+
+## Analyse des données relatives aux notes des étudiants aux examens
+
+## À propos du jeu de données :
 🎯 Contexte & objectif du dataset
 
 Ce dataset contient les résultats d’examen de plusieurs étudiants, ainsi que quelques variables explicatives (facteurs) liés à leurs habitudes ou caractéristiques académiques. ([Baselight][1])
@@ -233,5 +238,5 @@ attendance_percent ne montre pas de corrélation forte avec exam_score ni avec l
 La diagonale montre 1.0 (normal), mais toutes les autres corrélations sont très proches de 0.
 
 ➡️ student_id n’a aucun lien avec les variables académiques, ce qui est normal (simple identifiant).
-Conclusion
+## Conclusion
 L’analyse globale du dataset des performances étudiantes met en évidence une structure cohérente et des relations logiques entre les variables. La distribution des scores d’examen suit une forme quasi-normale, indiquant un système d’évaluation équilibré où la majorité des étudiants obtiennent des résultats proches de la moyenne. Les visualisations et la matrice de corrélation montrent que la variable la plus influente sur la performance finale est le nombre d’heures d’étude, révélant l’impact majeur du travail personnel sur la réussite académique. Les scores antérieurs contribuent également de manière significative, soulignant l’existence d’un niveau académique stable et progressif chez les étudiants. En revanche, la présence en cours et les heures de sommeil n’exercent qu’un effet modéré, suggérant qu’ils favorisent la performance sans en être des déterminants principaux. L’ensemble de ces résultats montre que la réussite dépend principalement de l’effort individuel et du parcours académique antérieur, tandis que les facteurs comportementaux ou contextuels jouent un rôle d’appoint. Cette analyse fournit ainsi une vision claire des leviers de performance et permet d’orienter des actions pédagogiques ciblées pour améliorer les résultats étudiants.
