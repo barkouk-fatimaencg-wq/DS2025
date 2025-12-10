@@ -4,7 +4,7 @@
 
 ## BARKOUK Fatima 
 ## 22007237
-<img src="m.jpg" style="height:540px;margin-right:393px"/>
+<img src="F135166562.jpg" style="height:540px;margin-right:393px"/>
 🎯 Contexte & objectif du dataset
 
 Ce dataset contient les résultats d’examen de plusieurs étudiants, ainsi que quelques variables explicatives (facteurs) liés à leurs habitudes ou caractéristiques académiques. ([Baselight][1])
