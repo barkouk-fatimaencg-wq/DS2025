@@ -208,6 +208,7 @@ attendance_percent
 previous_scores
 
 exam_score  et on voit plusieurs choses importantes :
+<img src="téléchargement (3).png" style="height:540px;margin-right:393px"/>
 
 🔵 1. hours_studied → exam_score (corrélation positive forte)
 
