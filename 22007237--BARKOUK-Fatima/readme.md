@@ -100,7 +100,7 @@ Exemple : Si hours_studied explique 40% de la variation du score → bonne préd
 7️⃣Interprétation du graphique plt.figure(figsize=(8, 6)) sns.histplot(data['exam_score'], kde=True, bins=10, color='skyblue') plt.title("Target Distribution") plt.xlabel("exam_score") plt.ylabel("Count") plt.show()
 
 Ce graphique représente la distribution de la variable exam_score, c’est-à-dire la répartition des notes finales des étudiants. 
-
+<img src="téléchargement (1).png" style="height:540px;margin-right:393px"/>
 Voici ce que l’on observe :
 
 ✅ 1) Forme générale : distribution quasi-normale
