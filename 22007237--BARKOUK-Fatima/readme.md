@@ -133,7 +133,10 @@ La distribution semble assez symétrique, mais peut-être légèrement plus éta
 
 On voit très peu de notes < 20 ou > 50.
 
-Cela signifie que le dataset est propre et ne contient pas d’outliers problématiques. 8️⃣Interprétation complète de la matrice plt.figure(figsize=(12, 10)) corr = data.corr()
+Cela signifie que le dataset est propre et ne contient pas d’outliers problématiques.
+
+<img src="téléchargement (2).png" style="height:540px;margin-right:393px"/>
+8️⃣Interprétation complète de la matrice plt.figure(figsize=(12, 10)) corr = data.corr()
 
 sns.heatmap( corr, annot=True, cmap="coolwarm", vmin=-1, vmax=1, linewidths=0.5 )
 
@@ -183,7 +186,8 @@ Interprétation : Les étudiants qui dormaient moins avaient parfois de meilleur
 
 Corrélations d’environ 0, donc non interprétables.
 
-C’est normal : l’identifiant est juste un numéro. 9️⃣Interprétation du graphe import pandas as pd import matplotlib.pyplot as plt import seaborn as sns
+C’est normal : l’identifiant est juste un numéro.
+9️⃣Interprétation du graphe import pandas as pd import matplotlib.pyplot as plt import seaborn as sns
 
 Exemple de DataFrame selon les variables visibles dans le graphique
 df = pd.DataFrame({ "student_id": [...], "hours_studied": [...], "sleep_hours": [...], "attendance_percent": [...], "previous_scores": [...], "exam_score": [...] })
