@@ -78,9 +78,77 @@ Dans le cadre de ce projet, plusieurs **algorithmes d’apprentissage supervisé
 
 ### Algorithme principal retenu
 
-L’**apprentissage est principalement basé sur des algorithmes de régression supervisée**, car la variable cible (**Exam_Score**) est une **valeur numérique continue**.
+L’**apprentissage est principalement basé sur des algorithmes de régression supervisée**, car la variable cible (**Exam_Score**) est une **valeur numérique continue**. 
 
+---
 
+## Ressources utilisées dans le projet
+
+Dans le cadre de la réalisation de ce projet, plusieurs ressources ont été mobilisées afin d’assurer une analyse rigoureuse et structurée des données.
+
+### 1️⃣ Ressources de données
+
+* **Jeu de données** : *Student Exam Scores Dataset*
+* **Source** : Dataset téléchargé depuis la plateforme **Kaggle**
+* **Format** : Fichier CSV (*student_exam_scores.csv*)
+* **Contenu** : Informations relatives aux étudiants (heures d’étude, niveau de préparation, résultats aux examens, etc.)
+
+---
+
+### 2️⃣ Ressources logicielles et techniques
+
+* **Environnement de travail** :
+
+  * Jupyter Notebook
+  * Python (langage principal du projet)
+
+* **Bibliothèques Python utilisées** :
+
+  * **Pandas** : manipulation et nettoyage des données
+  * **NumPy** : calculs numériques
+  * **Matplotlib** : visualisation des données
+  * **Seaborn** : graphiques statistiques
+  * **Scikit-learn** :
+
+    * Prétraitement des données
+    * Séparation train/test
+    * Implémentation des modèles de machine learning
+    * Évaluation des performances
+
+---
+
+### 3️⃣ Ressources méthodologiques
+
+* **Analyse exploratoire des données (EDA)** :
+
+  * Statistiques descriptives
+  * Analyse des corrélations
+  * Visualisation des distributions
+
+* **Méthodes de Machine Learning** :
+
+  * Régression linéaire
+  * Arbre de décision
+  * K-Nearest Neighbors (KNN)
+
+* **Méthodes d’évaluation** :
+
+  * Erreur quadratique moyenne (MSE)
+  * Coefficient de détermination (R²)
+
+---
+
+### 4️⃣ Ressources documentaires et pédagogiques
+
+* Documentation officielle des bibliothèques Python :
+
+  * Pandas
+  * Scikit-learn
+  * Matplotlib
+* Supports de cours en **data science / machine learning**
+* Articles et tutoriels pédagogiques pour l’interprétation des modèles
+
+---
 ## ⭐ INTERPRÉTATION DE CHAQUE CODE DU NOTEBOOK
 
 1️⃣ student_id
