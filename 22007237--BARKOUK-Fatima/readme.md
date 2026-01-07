@@ -16,6 +16,70 @@
 Ce dataset contient les résultats d’examen de plusieurs étudiants, ainsi que quelques variables explicatives (facteurs) liés à leurs habitudes ou caractéristiques académiques. ([Baselight][1])
 L’objectif principal est d’analyser l’influence de ces facteurs (temps d’étude, sommeil, présence, résultats antérieurs, etc.) sur la performance à l’examen final (score d’examen). Cela peut servir à des analyses statistiques, à de l’exploration de données (EDA), voire à de la modélisation prédictive (prévoir le score d’un étudiant donné en fonction de ses caractéristiques).
 Autrement dit : ce dataset est un bon outil pédagogique ou d’expérimentation pour comprendre — en science des données / statistiques / pédagogie — comment certains comportements ou antécédents sont corrélés (ou pas) avec la réussite académique. Ce type d’analyse s’inscrit dans le champ plus large de l’“educational data mining” (extraction de connaissances à partir de données éducatives), souvent utilisé pour identifier des déterminants de la réussite, recommander des interventions (ex : soutien pour ceux qui risquent d’échouer), etc. ([arXiv][2])
+Voici une réponse **claire et directe**, prête à être intégrée dans ton rapport 👇
+
+
+## 1️⃣ Présentation des données
+
+Le projet repose sur l’exploitation du jeu de données **Student Exam Scores Dataset**, qui regroupe des informations relatives aux étudiants et à leurs performances académiques.
+Ces données permettent d’analyser les facteurs susceptibles d’influencer les résultats aux examens et de modéliser la relation entre les caractéristiques des étudiants et leurs scores.
+
+* **Format** : CSV
+* **Type de données** : données quantitatives et qualitatives
+* **Observation** : chaque ligne représente un étudiant
+* **Variables** : caractéristiques personnelles, académiques et résultats d’examen
+
+---
+
+## 2️⃣ Colonnes principales du dataset
+
+Parmi l’ensemble des variables disponibles, les colonnes principales utilisées dans ce projet sont :
+
+* **Hours_Studied** : nombre d’heures d’étude consacrées par l’étudiant
+* **Attendance** : taux de présence aux cours
+* **Parental_Involvement** : niveau d’implication des parents
+* **Access_to_Resources** : accès aux ressources pédagogiques
+* **Previous_Scores** : notes obtenues lors des examens précédents
+* **Motivation_Level** : niveau de motivation de l’étudiant
+* **Tutoring** : participation ou non à des cours de soutien
+* **Exam_Score** : note finale obtenue à l’examen (variable cible)
+
+👉 Les premières colonnes sont des **variables explicatives**, tandis que **Exam_Score** constitue la **variable dépendante** à prédire.
+
+---
+
+## 3️⃣ Problème principal du projet
+
+Le problème principal abordé dans ce projet est un **problème de régression supervisée**.
+
+### 🎯 Objectif
+
+Prédire la **note finale à l’examen (Exam_Score)** d’un étudiant à partir de ses caractéristiques académiques et comportementales.
+
+### ❓ Problématique
+
+> *Quels sont les facteurs qui influencent le plus la performance académique des étudiants, et dans quelle mesure peut-on prédire leur score final à l’examen à partir de ces facteurs ?*
+
+
+## Nom de l’algorithme utilisé pour l’apprentissage
+
+Dans le cadre de ce projet, plusieurs **algorithmes d’apprentissage supervisé de type régression** ont été utilisés :
+
+1. **Régression Linéaire (Linear Regression)**
+   → Sert de modèle de base pour analyser la relation linéaire entre les variables explicatives et la note finale.
+
+2. **Arbre de Décision pour la Régression (Decision Tree Regressor)**
+   → Permet de capturer des relations non linéaires et des interactions complexes entre les variables.
+
+3. **K plus proches voisins – Régression (K-Nearest Neighbors Regressor)**
+   → Prédit la note d’un étudiant en se basant sur la moyenne des scores des étudiants les plus similaires.
+
+---
+
+### Algorithme principal retenu
+
+L’**apprentissage est principalement basé sur des algorithmes de régression supervisée**, car la variable cible (**Exam_Score**) est une **valeur numérique continue**.
+
 
 ## ⭐ INTERPRÉTATION DE CHAQUE CODE DU NOTEBOOK
 
