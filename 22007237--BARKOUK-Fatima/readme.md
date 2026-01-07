@@ -13,10 +13,9 @@
 ## À propos du jeu de données :
 🎯 Contexte & objectif du dataset
 
-Ce dataset contient les résultats d’examen de plusieurs étudiants, ainsi que quelques variables explicatives (facteurs) liés à leurs habitudes ou caractéristiques académiques. ([Baselight][1])
+Ce dataset contient les résultats d’examen de plusieurs étudiants, ainsi que quelques variables explicatives (facteurs) liés à leurs habitudes ou caractéristiques académiques.
 L’objectif principal est d’analyser l’influence de ces facteurs (temps d’étude, sommeil, présence, résultats antérieurs, etc.) sur la performance à l’examen final (score d’examen). Cela peut servir à des analyses statistiques, à de l’exploration de données (EDA), voire à de la modélisation prédictive (prévoir le score d’un étudiant donné en fonction de ses caractéristiques).
-Autrement dit : ce dataset est un bon outil pédagogique ou d’expérimentation pour comprendre — en science des données / statistiques / pédagogie — comment certains comportements ou antécédents sont corrélés (ou pas) avec la réussite académique. Ce type d’analyse s’inscrit dans le champ plus large de l’“educational data mining” (extraction de connaissances à partir de données éducatives), souvent utilisé pour identifier des déterminants de la réussite, recommander des interventions (ex : soutien pour ceux qui risquent d’échouer), etc. ([arXiv][2])
-Voici une réponse **claire et directe**, prête à être intégrée dans ton rapport 👇
+Autrement dit : ce dataset est un bon outil pédagogique ou d’expérimentation pour comprendre — en science des données / statistiques / pédagogie — comment certains comportements ou antécédents sont corrélés (ou pas) avec la réussite académique. Ce type d’analyse s’inscrit dans le champ plus large de l’“educational data mining” (extraction de connaissances à partir de données éducatives), souvent utilisé pour identifier des déterminants de la réussite, recommander des interventions (ex : soutien pour ceux qui risquent d’échouer), etc. 
 
 
 ## 1️⃣ Présentation des données
