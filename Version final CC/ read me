@@ -11,12 +11,124 @@
 ## Analyse des données relatives aux notes des étudiants aux examens
 ---
 ## À propos du jeu de données :
+## Problème principal du projet
+
+Le problème principal abordé dans ce projet est un **problème de régression supervisée**.
+
+### ❓ Problématique
+
+> *Quels sont les facteurs qui influencent le plus la performance académique des étudiants, et dans quelle mesure peut-on prédire leur score final à l’examen à partir de ces facteurs ?
+
 🎯 Contexte & objectif du dataset
 
 * Ce dataset contient les résultats d’examen de plusieurs étudiants, ainsi que quelques variables explicatives (facteurs) liés à leurs habitudes ou caractéristiques académiques. ([Baselight][1])
 * L’objectif principal est d’analyser l’influence de ces facteurs (temps d’étude, sommeil, présence, résultats antérieurs, etc.) sur la performance à l’examen final (score d’examen). Cela peut servir à des analyses statistiques, à de l’exploration de données (EDA), voire à de la modélisation prédictive (prévoir le score d’un étudiant donné en fonction de ses caractéristiques).
 * Autrement dit : ce dataset est un bon outil pédagogique ou d’expérimentation pour comprendre — en science des données / statistiques / pédagogie — comment certains comportements ou antécédents sont corrélés (ou pas) avec la réussite académique.
 Ce type d’analyse s’inscrit dans le champ plus large de l’“educational data mining” (extraction de connaissances à partir de données éducatives), souvent utilisé pour identifier des déterminants de la réussite, recommander des interventions (ex : soutien pour ceux qui risquent d’échouer), etc. ([arXiv][2])
+#
+Voici une **formulation claire, académique et complète** que tu peux utiliser telle quelle dans ton rapport ou ton projet 👇
+(adaptée à un **projet d’analyse de données / machine learning** sur les résultats des étudiants)
+
+---
+Voici une **présentation claire, structurée et prête à intégrer dans ton rapport** 👇
+(centrée sur **les données**, **les colonnes principales** et **le problème principal du projet**)
+
+---
+
+## 1️⃣ Présentation des données
+
+Le projet repose sur l’exploitation du jeu de données **Student Exam Scores Dataset**, qui regroupe des informations relatives aux étudiants et à leurs performances académiques.
+Ces données permettent d’analyser les facteurs susceptibles d’influencer les résultats aux examens et de modéliser la relation entre les caractéristiques des étudiants et leurs scores.
+
+* **Format** : CSV
+* **Type de données** : données quantitatives et qualitatives
+* **Observation** : chaque ligne représente un étudiant
+* **Variables** : caractéristiques personnelles, académiques et résultats d’examen
+
+---
+
+## 2️⃣ Colonnes principales du dataset
+
+Parmi l’ensemble des variables disponibles, les colonnes principales utilisées dans ce projet sont :
+
+* **Hours_Studied** : nombre d’heures d’étude consacrées par l’étudiant
+* **Attendance** : taux de présence aux cours
+* **Parental_Involvement** : niveau d’implication des parents
+* **Access_to_Resources** : accès aux ressources pédagogiques
+* **Previous_Scores** : notes obtenues lors des examens précédents
+* **Motivation_Level** : niveau de motivation de l’étudiant
+* **Tutoring** : participation ou non à des cours de soutien
+* **Exam_Score** : note finale obtenue à l’examen (variable cible)
+
+👉 Les premières colonnes sont des **variables explicatives**, tandis que **Exam_Score** constitue la **variable dépendante** à prédire.
+
+---
+
+## Ressources utilisées dans le projet
+
+Dans le cadre de la réalisation de ce projet, plusieurs ressources ont été mobilisées afin d’assurer une analyse rigoureuse et structurée des données.
+
+### 1️⃣ Ressources de données
+
+* **Jeu de données** : *Student Exam Scores Dataset*
+* **Source** : Dataset téléchargé depuis la plateforme **Kaggle**
+* **Format** : Fichier CSV (*student_exam_scores.csv*)
+* **Contenu** : Informations relatives aux étudiants (heures d’étude, niveau de préparation, résultats aux examens, etc.)
+
+---
+
+### 2️⃣ Ressources logicielles et techniques
+
+* **Environnement de travail** :
+
+  * Jupyter Notebook
+  * Python (langage principal du projet)
+
+* **Bibliothèques Python utilisées** :
+
+  * **Pandas** : manipulation et nettoyage des données
+  * **NumPy** : calculs numériques
+  * **Matplotlib** : visualisation des données
+  * **Seaborn** : graphiques statistiques
+  * **Scikit-learn** :
+
+    * Prétraitement des données
+    * Séparation train/test
+    * Implémentation des modèles de machine learning
+    * Évaluation des performances
+
+---
+
+### 3️⃣ Ressources méthodologiques
+
+* **Analyse exploratoire des données (EDA)** :
+
+  * Statistiques descriptives
+  * Analyse des corrélations
+  * Visualisation des distributions
+
+* **Méthodes de Machine Learning** :
+
+  * Régression linéaire
+  * Arbre de décision
+  * K-Nearest Neighbors (KNN)
+
+* **Méthodes d’évaluation** :
+
+  * Erreur quadratique moyenne (MSE)
+  * Coefficient de détermination (R²)
+
+---
+
+### 4️⃣ Ressources documentaires et pédagogiques
+
+* Documentation officielle des bibliothèques Python :
+
+  * Pandas
+  * Scikit-learn
+  * Matplotlib
+* Supports de cours en **data science / machine learning**
+* Articles et tutoriels pédagogiques pour l’interprétation des modèles
 
 # ⭐ **INTERPRÉTATION DE CHAQUE CODE DU NOTEBOOK**
 1️⃣ student_id
